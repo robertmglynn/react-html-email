@@ -16,7 +16,7 @@
     "lint": "eslint --ext .jsx --ext .js .",
     "test": "jest",
     "test:cov": "jest --coverage",
-    "compile": "babel -d lib/ src/ && cp -v src/supportMatrix.json lib/",
+    "compile": "babel -d lib/ src/ && xcopy src\\supportMatrix.json lib\\",
     "scrape": "babel-node scripts/scrapeStyleSupport.js > src/supportMatrix.json",
     "prepare": "npm run compile"
   },
@@ -37,8 +37,8 @@
     "eslint-plugin-react": "^7.4.0",
     "jest": "^21.1.0",
     "node-fetch": "~1.7.3",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "peerDependencies": {
     "react": "^16.0.0",
