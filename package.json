@@ -16,7 +16,7 @@
     "lint": "eslint --ext .jsx --ext .js .",
     "test": "jest",
     "test:cov": "jest --coverage",
-    "compile": "babel -d lib/ src/ && xcopy src\\supportMatrix.json lib\\",
+    "compile": "babel -d lib/ src/ && xcopy \"src\\supportMatrix.json\" \"lib\\\" /Y",
     "scrape": "babel-node scripts/scrapeStyleSupport.js > src/supportMatrix.json",
     "prepare": "npm run compile"
   },
